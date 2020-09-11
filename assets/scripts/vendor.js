@@ -17,6 +17,8 @@ const btn9 = document.getElementById('btn-9');
 const btnclear = document.getElementById('btn-clear');
 const btnEqual = document.getElementById('btn-equal');
 
+const btnHistorial = document.getElementById('btn-historial');
+
 
 const currentResultOutput = document.getElementById('current-resultado');
 const currentCalculationOutput = document.getElementById('current-calculo');
