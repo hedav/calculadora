@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Calculadora Bootcamp</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
-      rel="stylesheet"
-    />
+    <title>Calculadora bootcamp 2.0</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/app.css" />
   </head>
   <body>
     <header>
-      <h1>Calculadora Bootcamp</h1>
+      <h2>Calculadora bootcamp</h2>
     </header>
-
     <section id="calculator">
       <input type="number" id="input-number" />
-      <div id="calc-actions">
-        <button type="button" id="btn-suma">+</button>
-        <button type="button" id="btn-resta">-</button>
-        <button type="button" id="btn-multiplicar">*</button>
-        <button type="button" id="btn-dividir">/</button>
+      <div id="calc-actions1">
+        <button type="button" name="button2" id="btn-7">7</button>
+        <button type="button" id="btn-8">8</button>
+        <button type="button" id="btn-9">9</button>
+        <button type="button" id="btn-divide">/</button>
+      </div>
+      <div id="calc-actions2">
+        <button type="button" id="btn-4">4</button>
+        <button type="button" id="btn-5">5</button>
+        <button type="button" id="btn-6">6</button>
+        <button type="button" id="btn-multiply">*</button>
+      </div>
+      <div id="calc-actions3">
+        <button type="button" id="btn-1">1</button>
+        <button type="button" id="btn-2">2</button>
+        <button type="button" id="btn-3">3</button>
+        <button type="button" id="btn-subtract">-</button>
+      </div>
+      <div id="calc-actions4">
+        <button type="button" id="btn-0">0</button>
+        <button type="button" id="btn-clear">C</button>
+        <button type="button" id="btn-equal">=</button>
+        <button type="button" id="btn-add">+</button>
       </div>
     </section>
     <section id="results">
-      <h2 id="current-calculo">0</h2>
-      <h2>Resultado: <span id="current-resultado">0</span></h2>
+      <button type="button" id="btn-historial">Historial</button>
+      <h2 id="current-calculation">0</h2>
+      <h2>Result: <span id="current-result">0</span></h2>
     </section>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
   </body>
 </html>
