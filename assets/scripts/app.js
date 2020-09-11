@@ -5,6 +5,7 @@ let operacion = null;
 let operador = 0;
 let operando = 0;
 let isOperando = false;
+let isCientifica = false;
 
 function aritmetica(){
     switch(operacion){
@@ -70,11 +71,15 @@ function calcular(dijito,isSymbol){
   }
 
   function calculadoraCientifica(){
-    let contenedor = document.getElementById("calc-actions1");
-    let nuevoBoton = document.createElement('button');
-    contenedor.appendChild(nuevoBoton);
-    nuevoBoton.textContent = "%";
-    nuevoBoton.style.backgroundColor('blue');
+    if(!isCientifica)
+    {
+      let contenedor = document.getElementById("calc-actions1");
+      let nuevoBoton = document.createElement('button');
+      contenedor.appendChild(nuevoBoton);
+      nuevoBoton.textContent = "%";
+      nuevoBoton.style.backgroundColor('blue');
+      isCientifica == true;
+    }
   }
 
   function calculadoraNormal(){
@@ -135,5 +140,8 @@ divideBtn.addEventListener('click',function() {
   });
 btnEqual.addEventListener('click',function() {
     calcular("=", true);
-  });  
+  });
+btnHistorial.addEventListener('click',function() {
+  calculadoraCientifica();
+});
 
